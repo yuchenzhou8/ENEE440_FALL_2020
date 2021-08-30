@@ -1,0 +1,8 @@
+# intiialize
+:0400FC
+# 3.3V constant
+:0401FF0FED
+# 3.3V 50% 1HZ PWM
+:0402FF0FF401F7
+# stop PWM
+:0403F9

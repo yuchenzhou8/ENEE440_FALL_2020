@@ -1,0 +1,18 @@
+# testy_script.txt wmh 2020-11-17 : demo for sending commands to testy device. Hit 'Enter' to advance through the instructions
+# INFO: comment lines in the script are printed to the system console but ignored by the program.
+# INFO: lines that aren't comments are commands which are sent as strings to the serial port when the user hits 'Enter'.
+# The first command ':0000' resets the Testy system. Hit 'Enter' to send the command 
+#:0000	!!TODO: FIXME currently disabled -- this resets the system but also messes up messaging for a while 
+# Command ':0100FF' initializes the green LED device; ":0101FE" turns it on; ":0103FC" reports its state. Hit 'Enter' to send the command 
+:0100FF
+#":0101FE" turns it on
+:0101FE
+#":0103FC" reports its state
+:0103FC
+#":0102FD" turns it off
+:0102FD
+#":0103FC" reports its new state
+:0103FC
+# The last command ':0000' resets the Testy system again
+#:0000 !!TODO: FIXME currently disabled -- this resets the system but also messes up messaging for a while
+# There are no more commands to demonstrate. Hit 'Enter' to quit

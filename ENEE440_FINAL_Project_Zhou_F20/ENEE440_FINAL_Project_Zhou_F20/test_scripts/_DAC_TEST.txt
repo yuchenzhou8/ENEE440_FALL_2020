@@ -1,0 +1,16 @@
+# Author: Yuchen Zhou
+# intiialize DAC
+:0400FC
+# 3.3V constant output
+:0401FF0FED
+# 3.3V 50% 1HZ PWM
+:0402FF0FF401F7
+# 1.65 50% duty 1Hz PWM
+:04020008F401FD
+# stop PWM
+:0403F9
+# 3.3V 1Hz sine Wave (amplitude = 1.65 , center = 1.65)
+:0404E8030D
+# stop sine
+:0403F9
+# end

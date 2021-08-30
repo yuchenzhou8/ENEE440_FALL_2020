@@ -1,0 +1,16 @@
+# GPIO_TEST.txt : demo for sending commands to testy device. Hit 'Enter' to advance through the instructions
+# INFO: comment lines in the script are printed to the system console but ignored by the program.
+# INFO: lines that aren't comments are commands which are sent as strings to the serial port when the user hits 'Enter'.
+# The first command ':0000' resets the Testy system. Hit 'Enter' to send the command 
+#:0000
+# Command ':0100FF' initializes the green LED device; ":0101FE" turns it on; ":0103FC" reports its state. Hit 'Enter' to send the command 
+:010000FF
+# ":010100FE" turn the Green LED on
+:010100FE
+# ":01040188135F" sends a scheduled slow blink (happens in 5000 ms or 5 s)
+:01040188135F 
+# ":0106011027C1" sends a scheduled stop blink (happens in 10000 ms or 10 s)
+:0106011027C1
+# The last command ':0000' resets the Testy system again
+#:0000 
+# There are no more commands to demonstrate. Hit 'Enter' to quit

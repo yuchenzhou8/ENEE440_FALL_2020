@@ -1,0 +1,18 @@
+# Author： Yuchen Zhou
+# TIM Test_script
+# please connect PE11 to PA0 !!!!!!!!!!!!!!!!!!!!!!!!!!
+# intialize  TIM1
+:0200FE
+# PWM period = 50 ms duty cycle = 50%
+:020150C33200B8
+# READ pulse period and width using PA0
+:0206F8
+# PFM period = 40 ms width 10 ms
+:0202409C1027E9
+# READ pulse period and width using PA0
+:0206F8
+# stop current pulse 
+:0207F7
+# generate a single pulse width of period = 50ms and duty cycle = 50%
+:020450C33200B5
+# END

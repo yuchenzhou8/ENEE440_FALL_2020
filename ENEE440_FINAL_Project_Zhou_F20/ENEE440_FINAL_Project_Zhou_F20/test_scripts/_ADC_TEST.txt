@@ -1,0 +1,16 @@
+# Author： Yuchen Zhou
+# ADC Test script
+# connect PA4 to PC2 for tranmisting the output DAC signal into the ADC input pin
+# first generate a sine wave using DAC
+# intiialize DAC
+:0400FC
+# 3.3V 1Hz sine Wave (amplitude = 1.65 , center = 1.65)
+:0404E8030D
+# initalize adc3
+:0300FD
+# initialize EOC IRQ
+:0301FC
+# start conversion
+:0302FB
+# since I cannot visualize the adc signal, I would use the Realterm and debugger to stop and check the buffer !!!!!!!!!!!!!!!!!!!!!!!!!!
+# end
